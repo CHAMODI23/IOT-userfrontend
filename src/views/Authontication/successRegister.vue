@@ -12,20 +12,24 @@
         <!-- form part -->
         <div class="flex flex-col p-3 pl-10 pr-10 gap-10 shadow-sm rounded-sm flex-1 max-w-md h-150 justify-center">
             <!-- header section -->
-            <div class="flex flex-col text-left font-semibold gap-2 text-xl w-[320px]">
-                <h3 class="font-black text-3xl text-[var(--common-theme)]">Account Security</h3>
+            <div class="flex flex-col text-center gap-5">
+                <div class="flex flex-col justify-center items-center w-full">
+                    <img src="@/assets/easyParkLogo.svg" alt="Logo" class="w-30" />
+                </div>
+                <h3 class="font-black text-3xl text-[var(--common-theme)]">Successful Signup!</h3>
+                
+                <div class="flex flex-col text-center gap-0">
+                    <p class="text-base text-black font-semibold">Thank you for registering with us!</p>
+                    <p class="text-base text-black">Account Created Successfully Login to Continue..</p>
+                </div>
             </div>
-            <!-- personal info section -->
-            <div class="flex flex-col gap-5">
-                <p class="text-base text-black font-semibold">Please add a stronge password.</p>
-                <input type="password" placeholder="Password" class="border px-4 py-1 rounded-sm focus:outline-none border-[var(--common-theme)]">
-                <input type="password" placeholder="Confirm Password" class="border px-4 py-1 rounded-sm focus:outline-none border-[var(--common-theme)]" @input="onNumberInput">
-            </div> 
             <!-- footer section -->
-            <button class="bg-[var(--common-theme)] hover:bg-[var(--common-theme-light)] active:bg-[#62383b] text-white hover:text-white active:text-white w-full border-0 rounded-sm py-1" @click="router.push('/paymentDetails')">Next</button>
+            <div class="">
+                <button class="bg-[var(--common-theme)] hover:bg-[var(--common-theme-light)] active:bg-[#62383b] text-white hover:text-white active:text-white w-full border-0 rounded-sm py-1" @click="router.push('/user/profile')">Log In</button>
+            </div>
         </div>
-    </div>  
+    </div>
 </template>
 <script setup>
     import router from '@/router';
-</script>
+</script> 

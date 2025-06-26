@@ -3,6 +3,8 @@ import Login from '@/views/Authontication/login.vue'
 import Register from '@/views/Authontication/register.vue'
 import Otp from '@/views/Authontication/otp.vue'
 import AddPassword from '@/views/Authontication/addPassword.vue'
+import PaymentDetails from '@/views/Authontication/paymentDetails.vue'
+import SuccessRegister from '@/views/Authontication/successRegister.vue'
 import User from '@/views/user.vue'
 import Profile from '@/views/User/profile.vue'
 import Session from '@/views/User/session.vue'
@@ -12,7 +14,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/login',
+      path: '/',
       name: 'login',
       component: Login,
     },
@@ -30,6 +32,16 @@ const router = createRouter({
       path: '/addpassword',
       name: 'addpassword',
       component: AddPassword,
+    },
+    {
+      path: '/paymentDetails',
+      name: 'paymentDetails',
+      component: PaymentDetails,
+    },
+    {
+      path: '/successRegister',
+      name: 'successRegister',
+      component: SuccessRegister,
     },
     {
       path: '/user',

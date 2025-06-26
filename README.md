@@ -27,3 +27,9 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Packages
+
+```sh
+npm install @heroicons/vue
+```
