@@ -73,7 +73,7 @@ const profileData = ref({
 const vehicleData = ref([
     {
         'regNumber' : 'spNB-2020',
-        'vehicleType' : 'general',
+        'vehicleType' : 'General', // Disability, Electric Vehicle, General
         'addedDate' : '2025-06-12 6:00'
     }
 ])
